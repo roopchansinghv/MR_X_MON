@@ -35,6 +35,9 @@ software:
 
 ![alt text](./implementation-schematic.svg    "Information flow and control")
 
+Implemented modules are bound by solid shapes, while those to be implemented
+are in shapes with dashed/broken outlines.
+
 
 
 

@@ -251,7 +251,7 @@ def send_image_data(sample_image_file, host_dest):
          scan_event_logger.warning ("Acquiring data from an EPI-based sequence")
          # fixing a number of time points for now, till I can figure out how
          # to get number of time points from header of EPI data.
-         dimon_cmd   += ['-rt_cmd', f'"GRAPH_XRANGE 300"', '-nt', '300']
+         dimon_cmd   += ['-nt', '300']
       # Also handle MP-RAGE as that's of interest for real-time applications
       elif (('tfl'  in sequence_name.value.lower()) and
             ('3d'   in sequence_name.value.lower()) and

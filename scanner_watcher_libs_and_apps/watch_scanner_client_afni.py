@@ -265,7 +265,7 @@ def send_image_data(sample_image_file, host_dest):
       # Otherwise, if other data are collected and needed, tell user how to
       # send to AFNI, but ignore by default for the time-being.
       else:
-         print(f"If AFNI data from this series is needed, run command: {
+         print(f"Not sending data from this series to AFNI.  If AFNI data from this series are needed, run command: {
                  ' '.join(dimon_cmd)}")
          # And 'nullify' Dimon command, to not take any action here.
          dimon_cmd = ['echo']

@@ -179,7 +179,7 @@ async def watch(path: Path, recursive: bool = False) -> None:
 
    observer.schedule(handler, str(path), recursive=recursive)
    observer.start()
-   print("Observer started")
+   print("Watching for new data being written to disk ...")
    # observer.join(None) # Remove value or set to None, to allow to run indefinitely
 
 

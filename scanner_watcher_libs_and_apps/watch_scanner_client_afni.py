@@ -214,6 +214,8 @@ def send_image_data(sample_image_file, host_dest):
       file_pattern    = delimiter_path.join(['/export', 'home1', 'sdc_image_pool', 'images'] +
                                             file_pattern.split(delimiter_path)[-4:])
 
+      print(f"Sequence name is: {sequence_name.value.lower()}")
+
       # SSH is being used to run Dimon back on the scanner console, as over NFS, image write
       # performance doesn't seem to be sufficient to allow Dimon to detect, read, and send
       # image data reliably to AFNI.  So run Dimon in way that is reads images 'locally' and
